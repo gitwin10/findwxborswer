@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+
+<body>
+<div id="jjkk"></div>
+
+	<script>
+		isWeChatBrowser();
+		function isWeChatBrowser() {
+			var ua = navigator.userAgent.toLowerCase();
+			return ua.indexOf('micromessenger') !== -1;
+		}
+
+		if (isWeChatBrowser()) {
+			document.getElementById("jjkk").innerHTML="ok";
+			console.log("当前浏览器是微信浏览器");
+		} else {
+			console.log("当前浏览器不是微信浏览器");
+			document.getElementById("jjkk").innerHTML="on";
+
+		}
+	</script>
+</body>
+
+</html>
