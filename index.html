@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<div id="jjkk"></div>
+<h5 id="oopp"></h5>
 
 	<script>
 		isWeChatBrowser();
@@ -19,11 +19,10 @@
 		}
 
 		if (isWeChatBrowser()) {
-			document.getElementById("jjkk").innerHTML="ok";
-			console.log("当前浏览器是微信浏览器");
+			document.getElementById("oopp").innerHTML="请使用浏览器打开：https://kimi.moonshot.cn/chat/cugevcpdjjps1k5aa0ug";
 		} else {
 			console.log("当前浏览器不是微信浏览器");
-			document.getElementById("jjkk").innerHTML="on";
+			window.open('https://kimi.moonshot.cn/chat/cugevcpdjjps1k5aa0ug', '_blank');
 
 		}
 	</script>
